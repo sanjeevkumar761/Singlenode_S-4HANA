@@ -4,6 +4,8 @@
   vars_files:
     - s4hana_vars.yml
   roles:
+    - disk-setup
+    - nfs-export
     - swpm-download
     - export-download
     - kernel-download
