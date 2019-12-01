@@ -16,9 +16,6 @@ resource "azurerm_storage_account" "bootdiagstorageaccount" {
   account_tier             = "Standard"
   account_replication_type = "LRS"
 
-  tags {
-    environment = "Terraform SAP HANA deployment"
-  }
 }
 
 # All disks that are in the storage_disk_sizes_gb list will be created
@@ -85,5 +82,4 @@ resource "azurerm_virtual_machine" "vm" {
     storage_uri = "${azurerm_storage_account.bootdiagstorageaccount.primary_blob_endpoint}"
   }
 
-  tags = "${merge(map(var.machine_type, ""), var.tags)}"
 }

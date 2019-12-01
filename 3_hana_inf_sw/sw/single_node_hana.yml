@@ -1,5 +1,5 @@
 ---
-- hosts: "10.2.0.20"
+- hosts: "104.210.63.107"
   become: true
   vars_files:
     - ./hana_vars.yml

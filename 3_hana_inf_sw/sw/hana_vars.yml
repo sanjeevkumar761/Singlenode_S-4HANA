@@ -1,5 +1,5 @@
-hana_host: 10.1.0.20
-sap_sid: HN2
+hana_host: 104.210.63.107
+sap_sid: HN1
 sap_instancenum: 00
 sap_hostname: hanadb
 

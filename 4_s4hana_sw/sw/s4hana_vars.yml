@@ -26,15 +26,15 @@ client: /usr/sap/install/hdbclient
 ascs_instance_num: 10
 virtual_hostname: hanadb
 install_dir: /usr/sap/install
-sap_sid: CGA
+sap_sid: S40
 ci_instance_num: 12
 
-hana_host: 10.1.0.30
+hana_host: 104.40.11.24
 hana_hostname: hanadb
-hana_ip: 10.1.0.30
-hana_sid: HN2
+hana_ip: 104.40.11.24
+hana_sid: HN1
 hana_instance_num: 00
 hana_password: Hana@123456
 hana_user_name: SYSTEM
 
-db_load_job_num: 5
+db_load_job_num: 10
